@@ -1,0 +1,99 @@
+.header-main {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  overflow: hidden;
+}
+.header {
+  width: 20%;
+  gap: 20px;
+  margin: 0 30px;
+}
+.header-left {
+  background-color: rgb(79, 81, 83);
+  text-align: left;
+}
+.header-right {
+  text-align: right;
+}
+.menu {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.signin-button {
+  background-color: rgb(255, 208, 0);
+  color: black;
+  padding: 2px;
+  border: 1px solid rgb(255, 136, 0);
+  cursor: pointer;
+  text-align: center;
+}
+
+/* landing page */
+.landing-main {
+  margin: 75px auto;
+  width: 580px;
+  text-align: left;
+}
+.companies {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.button {
+  margin: 0 auto;
+  width: 350px;
+  font-size: 19px;
+  text-align: center;
+  padding: 3px 30px;
+  background-color: rgb(255, 208, 0);
+  border: 1px solid rgb(255, 136, 0);
+}
+
+/* signin page */
+.signin {
+  margin: 50px auto;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 0 15px 0.5px gray;
+  background-color: white;
+  padding: 30px;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+}
+
+.input {
+  padding: 10px;
+  font-weight: 500;
+  position: relative;
+}
+.error {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: red;
+}
+
+/*Dashboard page*/
+.course-container {
+  text-align: left;
+  margin: 10px auto;
+  width: 400px;
+  background-color: rgb(177, 177, 177);
+  padding: 3px;
+  border: 2px solid black;
+}
