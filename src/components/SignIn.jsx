@@ -90,7 +90,7 @@ export default function SignIn() {
         setPassword("");
       });
     } else {
-      alert("Required email and password");
+      alert("Fill the Data");
     }
   }
   return (

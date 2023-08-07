@@ -4,12 +4,7 @@ import Header from "./Header.jsx";
 import { customGet } from "../utilities/custom-fetch";
 
 export default function Dashboard() {
-  const [course, setCourse] = useState([
-    {
-      title: "Responsive Web Design Certification",
-      duration: "300 hours",
-    },
-  ]);
+  const [course, setCourse] = useState([]);
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
@@ -23,8 +18,8 @@ export default function Dashboard() {
   }, []);
 
   useEffect(() => {
-    let email = sessionStorage.getItem("email");
-    customGet(`/course/get-course/${email}`).then((response) => {
+    customGet(`/course/get-course`).then((response) => {
+      console.log(response.course);
       response.course ? setCourse(response.course) : null;
     });
   }, []);
@@ -45,7 +40,7 @@ export default function Dashboard() {
         </div>
         {course
           ? course.map((item) => (
-              <div className="course-container">
+              <div key={item._id} className="course-container">
                 {item.title} ({item.duration})
               </div>
             ))
