@@ -63,7 +63,7 @@ export default function SignIn() {
         }
       });
     } else {
-      alert("Fill the form data");
+      alert("Fill the form data correctly");
     }
   }
 
